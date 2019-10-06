@@ -85,3 +85,24 @@ class CriticModel(nn.Module):
         x = self.fc3(x)
         return x
 
+
+class Actor_Critic_Models():
+    """
+    Create object containing all models required per DDPG agent:
+    local and target actor and local and target critic
+    """
+
+    def __init__(self, n_agents, state_size=24, action_size=2, seed=0):
+        """
+        Params
+        ======
+            n_agents (int): number of agents
+            state_size (int): number of state dimensions for a single agent
+            action_size (int): number of action dimensions for a single agent
+            seed (int): random seed
+        """
+        self.actor_local = ActorModel(state_size, action_size, seed).to(device)
+        self.actor_target = ActorModel(state_size, action_size, seed).to(device)
+        critic_input_size = (state_size+action_size)*n_agents
+        self.critic_local = CriticModel(critic_input_size, seed).to(device)
+        self.critic_target = CriticModel(critic_input_size, seed).to(device)
