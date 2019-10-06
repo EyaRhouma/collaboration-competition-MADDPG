@@ -4,7 +4,7 @@
 [image2]: https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif "Soccer"
 
 # Deep Reinforcement Learning : Collaboration and Competition using MADDPG
-My solution to Collaboration and Competition using MADDPG MADDPG algorithm https://arxiv.org/pdf/1706.02275.pdf, Udacity 3rd project of Deep RL Nanodegree from the paper "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"
+In this repository i used MADDPG algorithm https://arxiv.org/pdf/1706.02275.pdf to solve Collaboration and Competition , Udacity's 3rd project for Deep RL Nanodegree from the paper "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments"
 
 ## Project's goal
 
